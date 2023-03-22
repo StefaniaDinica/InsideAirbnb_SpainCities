@@ -4,9 +4,9 @@ The purpose of this project is to analyse and compare the prices of accommodatio
 The data is provided by http://insideairbnb.com/get-the-data/ and is organized in two folders with the names of the cities.
 
 ## Content
-1. [Data cleanup](#data-cleanup)
-2. [Availability insights](#availability-insights)
-3. [Price insights](#price-insights)
+* [Data cleanup](#data-cleanup)
+* [Availability insights](#availability-insights)
+* [Price insights](#price-insights)
     *  [Price per month](#price-per-month)
     *  [Price per month for studios](#price-per-month-studios)
     *  [Price per month for 1 bedroom properties](#price-per-month-1bd)
@@ -16,8 +16,10 @@ The data is provided by http://insideairbnb.com/get-the-data/ and is organized i
     *  [Price per month for all property types in Barcelona](#price-per-month-all-bc)
     *  [Price per city zone in Madrid](#price-per-zone-md)
     *  [Price per city zone in Barcelona](#price-per-zone-bc)
+* [Conclusions of the analysis](#conclusions)
+* [Used libraries](#used-libraries)
 
-## <a name='data-cleanup'>1. Data cleanup</a>
+## <a name='data-cleanup'>Data cleanup</a>
   Two data sets are used in this project, one for Madrid and one for Barcelona.
   Each set is composed of **listings.csv** and **calendar.csv** files, that are extracted into separate dataframes.
   
@@ -29,12 +31,12 @@ The data is provided by http://insideairbnb.com/get-the-data/ and is organized i
   - Format the prices in order to be numeric
   - Filter and keep only the prices in [5$, 1000$] interval
   
-##  <a name='availability-insights'>2. Availability insights</a>
+##  <a name='availability-insights'>Availability insights</a>
 The average availability of accommodations grouped by month is calculated for both cities and the result is the following plot:
 
 <img src="/plots/availability.png" alt="availability plot" style="height: 400px; width:400px;"/>
 
-## <a name='price-insights'>3. Price insights</a>
+## <a name='price-insights'>Price insights</a>
 - <a name='price-per-month'>Price per month</a>
 
 The average price of accommodations grouped by month is calculated for both cities and the result is the following plot:
@@ -90,9 +92,17 @@ The average price for all property types in Barcelona grouped by city zone and t
 
 <img src="/plots/bc_zones_avg.png" alt="bc_zones_avg plot" style="height: 400px; width:400px;"/>
 
-## Used libraries
-- Pandas
-- Matplotlib
+## <a name='conclusions'>Conclusions of the analysis</a>
+- Accommodations in Madrid are cheapest in August
+- Accommodations in Barcelona are most expensive in summer
+- Accommodations in Barcelona are more expensive than the ones in Madrid in summer and at the beginning of the year
+- In Barcelona accommodations closer to the city center are more expensive than the rest
+- Studios’ prices in Madrid are quite consistent, irregardless of the city center proximity, except the ones situated in zone 5
+- Prices in both cities seem to depend on availability in opposite directions
+
+## <a name='conclusions'>Used libraries</a>
+- [Pandas](https://pandas.pydata.org/)
+- [Matplotlib](https://matplotlib.org/)
 
 
 
