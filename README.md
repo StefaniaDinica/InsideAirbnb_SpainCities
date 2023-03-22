@@ -1,7 +1,7 @@
 # InsideAirbnb_SpainCities
 The purpose of this project is to analyse and compare the prices of accommodations in Madrid and Barcelona.
 
-The data is provided by http://insideairbnb.com/get-the-data/ and is organized in two folders with the names of the cities.
+The data is provided by http://insideairbnb.com/get-the-data/ and is organized in two folders with the names of the cities. The folders contain the compressed csv files. Don't forget to uncompress them.
 
 ## Content
 * [Data cleanup](#data-cleanup)
